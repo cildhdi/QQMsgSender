@@ -56,8 +56,8 @@ BOOL CALLBACK EnumWindowsProc(HWND hwnd, LPARAM lParam)
 	if (_tcscmp(lpClassName, L"TXGuiFoundation") == 0)
 	{
 		hwnd_vector.push_back(hwnd);
-		return true;
 	}
+	return true;
 }
 BOOL CopyToClipboard(const char* pszData, const int nDataLen)
 {
