@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 		SendMessage(hwnd_vector[nIndex], WM_PASTE, 0, 0);
 		SendMessage(hwnd_vector[nIndex], WM_KEYDOWN, VK_RETURN, 0);
 		i--;
-		cout << "sent " << (send_times - i) << " time(s)," << "expect end after " << i*send_interval / 1000 << " seconds" << endl;
+		cout << "sent " << (send_times - i) << " time(s)," << "end after " << i*send_interval / 1000 << " seconds" << endl;
 		Sleep(send_interval);
 	}
 	cout << "done.";
